@@ -18,3 +18,11 @@ describe("route 1 test case", () => {
     expect(resp.data).toMatch(/home/);
   });
 });
+
+describe("route 2 test case", () => {
+  it("should return this is home ", async () => {
+    const resp = await axios.get("/office");
+    expect(resp.status).toBe(200);
+    expect(resp.data).toMatch(/office/);
+  });
+});
