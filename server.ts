@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
   res.status(200).send("hello home ");
 });
+app.get("/office", (req, res) => {
+  res.status(200).send("hello office ");
+});
 app.listen(5050, () => {
   console.log("http://localhost:5050");
 });
